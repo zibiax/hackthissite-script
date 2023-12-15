@@ -8,7 +8,6 @@ def XUcrypt(XEcryptString):
 
     # loop adds sum of each group of three numbers to array and creates a map of the values
     # and the number of times they occur to calculate the mode-average
-    # which should be the space character
     for i in range(len(XEcryptValues) // 3):
         j = sum(int(XEcryptValues[k + 3 * i]) for k in range(3))
         XEcryptChars.append(j)
