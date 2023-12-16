@@ -6,8 +6,8 @@ def XUcrypt(XEcryptString):
     mode = None  # create mode var to keep track of which is the highest occurring character
     decoded = ""  # create decoded var for the decoded string
 
-    # loop adds sum of each group of three numbers to array and creates a map of the values
-    # and the number of times they occur to calculate the mode-average
+    """ loop adds sum of each group of three numbers to array and creates a map of the values
+     and the number of times they occur to calculate the mode-average """
     for i in range(len(XEcryptValues) // 3):
         j = sum(int(XEcryptValues[k + 3 * i]) for k in range(3))
         XEcryptChars.append(j)
